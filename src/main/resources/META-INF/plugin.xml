@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.sap.sf.nomockfw</id>
+    <name>Plugin display name here</name>
+    <vendor email="arjun.vinod@sap.com" url="https://github.com/arjundon4">GitHub</vendor>
+
+    <description><![CDATA[Plugin to generate boilerplate code for No Mock Framework]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action
+                id="SF.NOMockFramework.Editor"
+                class="com.sap.sf.nomockfw.MainAction"
+                text="Create NoMock Boilerplate Code"
+                description="Create boilerplate code with custom implementation for No Mock Framework">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
