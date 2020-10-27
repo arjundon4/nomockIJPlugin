@@ -14,6 +14,7 @@ public class MainAction extends AnAction {
         try
         {
             Runtime.getRuntime().exec(command);
+
         }
         catch (IOException ex)
         {

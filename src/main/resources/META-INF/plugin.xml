@@ -22,5 +22,12 @@
                 description="Create boilerplate code with custom implementation for No Mock Framework">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
+        <action
+                id="SF.NOMockFramework.ToolsMenu"
+                class="com.sap.sf.nomockfw.MainAction"
+                text="Create NoMock Boilerplate Code"
+                description="Create boilerplate code with custom implementation for No Mock Framework">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
